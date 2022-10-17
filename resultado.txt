@@ -100,14 +100,7 @@ wc -l sed.txt
 
 * Cuenta el número de **archivos** que empiezan por `lorem` que están en este directorio y en directorios internos.
 
-Get-ChildItem -Path C:\Users\sersu\IRONHACK\1.1-lab-bash\LOREM*
-
-
-
-
-
-
-
+find . -iname "lorem*" -type f |wc -l
 
 
 * Encuentra todas las apariciones de `et` en `at.txt` dentro de la carpeta lorem.
