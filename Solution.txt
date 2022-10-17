@@ -49,14 +49,13 @@ ls *.txt
 get-content C:\Users\david\Lab\Git_Bash\1.1-lab-bash\lorem\sed.txt | measure-object -Line
 
 - Cuenta el número de archivos que empiezan por lorem que están en este directorio y en directorios internos.
-(get-childitem -file | measure-object).count
-??
+ls 2>/dev/null -Ubad1 -- lorem* | wc -l
 
 - Encuentra todas las apariciones de et en at.txt dentro de la carpeta lorem.
-----------------------
+En Bash --> grep --color -F 'et' at.txt
 
 - Cuenta el número de apariciones del string et en at.txt dentro de la carpeta lorem.
-----------------------
+En Bash --> grep -o 'et' at.txt | wc -l
 
 - Cuenta el número de apariciones del string et en todos los archivos del directorio lorem-copy.
----------------------
+grep -c 'et' *
