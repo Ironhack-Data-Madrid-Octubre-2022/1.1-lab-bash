@@ -1,0 +1,196 @@
+1. Imprime en consola Hello World.
+
+(base) juliasabatel@MacBook-Air-de-Julia 1.1-lab-bash % print "hello world"
+hello world
+
+2. Crea un directorio nuevo llamado new_dir.
+
+(base) juliasabatel@MacBook-Air-de-Julia 1.1-lab-bash % ls
+README.md	lorem		solutions.txt
+(base) juliasabatel@MacBook-Air-de-Julia 1.1-lab-bash % mkdir new_dir
+
+3. Elimina ese directorio.
+
+(base) juliasabatel@MacBook-Air-de-Julia 1.1-lab-bash % ls
+README.md	lorem		solutions.txt
+(base) juliasabatel@MacBook-Air-de-Julia 1.1-lab-bash %
+
+4. Copia el archivo sed.txt dentro de la carpeta lorem a la carpeta lorem-copy. TIP: Puede ser necesario crear la carpeta lorem-copy primero.
+
+(base) juliasabatel@MacBook-Air-de-Julia lorem_copy % ls
+sed.txt
+(base) juliasabatel@MacBook-Air-de-Julia lorem_copy %
+
+
+5. Copia los otros dos archivos de la carpeta lorem a la carpeta lorem-copy en una sola línea.
+
+(base) juliasabatel@MacBook-Air-de-Julia lorem % ls
+at.txt		copy		lorem.txt	lorem_copy	sed.txt
+(base) juliasabatel@MacBook-Air-de-Julia lorem % cp at.txt lorem.txt lorem_copy
+(base) juliasabatel@MacBook-Air-de-Julia lorem % cd lorem_copy
+(base) juliasabatel@MacBook-Air-de-Julia lorem_copy % ls
+at.txt		lorem.txt	sed.txt
+(base) juliasabatel@MacBook-Air-de-Julia lorem_copy %
+
+
+6. Muestra el contenido del archivo sed.txt dentro de la carpeta lorem.
+
+(base) juliasabatel@MacBook-Air-de-Julia lorem % ls
+at.txt		copy		lorem.txt	lorem_copy	sed.txt
+(base) juliasabatel@MacBook-Air-de-Julia lorem % cat sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?%
+(base) juliasabatel@MacBook-Air-de-Julia lorem %
+
+7. Muestra el contenido de los archivos at.txt y lorem.txt dentro de la carpeta lorem.
+
+(base) juliasabatel@MacBook-Air-de-Julia lorem % ls
+at.txt		copy		lorem.txt	lorem_copy	sed.txt
+(base) juliasabatel@MacBook-Air-de-Julia lorem % cat sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?%
+(base) juliasabatel@MacBook-Air-de-Julia lorem % cat sed.txt at.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+Et harum quidem rerum facilis est et expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet
+ut et voluptates repudiandae sint et molestiae non recusandae.
+Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat%
+(base) juliasabatel@MacBook-Air-de-Julia lorem %
+
+8. Visualiza las primeras 3 líneas del archivo sed.txt dentro de la carpeta lorem-copy
+
+(base) juliasabatel@MacBook-Air-de-Julia lorem % head -3 sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+
+9. Visualiza las ultimas 3 líneas del archivo sed.txt dentro de la carpeta lorem-copy
+
+(base) juliasabatel@MacBook-Air-de-Julia lorem % tail -3 sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?%
+
+10. Añade Homo homini lupus. al final de archivo sed.txt dentro de la carpeta lorem-copy.
+
+(base) juliasabatel@MacBook-Air-de-Julia lorem % tail -3 sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?homo homini
+(base) juliasabatel@MacBook-Air-de-Julia lorem %
+
+11. Visualiza las últimas 3 líneas del archivo sed.txt dentro de la carpeta lorem-copy. Deberías ver ahora Homo homini lupus..
+
+(base) juliasabatel@MacBook-Air-de-Julia lorem % tail -3 sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?homo homini
+(base) juliasabatel@MacBook-Air-de-Julia lorem %
+
+
+12. Sustituye todas las apariciones de et por ET del archivo at.txt dentro de la carpeta lorem-copy. Deberás usar sed.
+
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?homo homini
+(base) juliasabatel@MacBook-Air-de-Julia lorem % sed 's/et/ET/g' at.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat%
+
+13. Encuentra al usuario activo en el sistema.
+
+(base) juliasabatel@MacBook-Air-de-Julia lorem % whoami
+juliasabatel
+(base) juliasabatel@MacBook-Air-de-Julia lorem %
+
+(base) juliasabatel@MacBook-Air-de-Julia lorem_copy % id -un
+juliasabatel
+(base) juliasabatel@MacBook-Air-de-Julia lorem_copy %
+
+
+14. Encuentra dónde estás en tu sistema de ficheros.
+
+juliasabatel
+(base) juliasabatel@MacBook-Air-de-Julia lorem % ls
+Homo		at.txt		copy		lorem.txt	lorem_copy	sed.txt
+(base) juliasabatel@MacBook-Air-de-Julia lorem %
+
+
+15. Lista los archivos que terminan por .txt en la carpeta lorem.
+
+(base) juliasabatel@MacBook-Air-de-Julia lorem % ls -a
+.		.DS_Store	at.txt		lorem.txt	sed.txt
+..		Homo		copy		lorem_copy
+
+
+16. Cuenta el número de líneas que tiene el archivo sed.txt dentro de la carpeta lorem.
+
+(base) juliasabatel@MacBook-Air-de-Julia lorem % wc sed.txt
+       9     130     885 sed.txt
+(base) juliasabatel@MacBook-Air-de-Julia lorem %
+
+
+17. Cuenta el número de archivos que empiezan por lorem que están en este directorio y en directorios internos.
+
+
+(base) juliasabatel@MacBook-Air-de-Julia 1.1-lab-bash % find *lorem | wc -l
+      11
+(base) juliasabatel@MacBook-Air-de-Julia 1.1-lab-bash %
+
+
+18. Encuentra todas las apariciones de et en at.txt dentro de la carpeta lorem.
+
+
+(base) juliasabatel@MacBook-Air-de-Julia lorem_copy % cat at.txt | grep et | wc -l
+       7
+
+19. Cuenta el número de apariciones del string et en at.txt dentro de la carpeta lorem.
+
+(base) juliasabatel@MacBook-Air-de-Julia lorem % ls
+Homo		at.txt		copy		lorem.txt	lorem_copy	sed.txt
+(base) juliasabatel@MacBook-Air-de-Julia lorem % find *at.txt | wc -l
+       1
+
+20. Cuenta el número de apariciones del string et en todos los archivos del directorio lorem-copy.
+
+(base) juliasabatel@MacBook-Air-de-Julia lorem % grep et lorem_copy | wc
+grep: lorem_copy: Is a directory
+       0       0       0
+(base) juliasabatel@MacBook-Air-de-Julia lorem % ls
+
+
+
+
