@@ -44,8 +44,10 @@ Encuentra al usuario activo en el sistema.
 whoami
 
 Encuentra dónde estás en tu sistema de ficheros.
+pwd
 
 Lista los archivos que terminan por .txt en la carpeta lorem.
+ls *.txt
 
 Cuenta el número de líneas que tiene el archivo sed.txt dentro de la carpeta lorem.
 
