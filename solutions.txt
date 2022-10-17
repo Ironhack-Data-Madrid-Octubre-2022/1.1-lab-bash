@@ -49,12 +49,30 @@ pwd
 Lista los archivos que terminan por .txt en la carpeta lorem.
 ls *.txt
 
-Cuenta el número de líneas que tiene el archivo sed.txt dentro de la carpeta lorem.
+Cuenta el número de líneas que tiene el archivo sed.txt dentro de la carpeta lorem. wc -l sed.txt
+8
 
-Cuenta el número de archivos que empiezan por lorem que están en este directorio y en directorios internos.
+Cuenta el número de archivos que empiezan por lorem que están en este directorio y en directorios internos. 
+find *lorem | wc -l
+6
 
 Encuentra todas las apariciones de et en at.txt dentro de la carpeta lorem.
+lorem vasilijutkin$ grep -o et at.txt
+et
+et
+et
+et
+et
+et
+et
+et
+et
+et
 
 Cuenta el número de apariciones del string et en at.txt dentro de la carpeta lorem.
+grep -o et at.txt| wc -l
+      10
 
 Cuenta el número de apariciones del string et en todos los archivos del directorio lorem-copy.
+grep -o “et” *.txt | wc -l
+       0
