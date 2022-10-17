@@ -1,0 +1,153 @@
+(base) anachaparrohernandez@MacBook-Air-de-Ana desktop % git clone https://github.com/Ironhack-Data-Madrid-Octubre-2022/1.1-lab-bash.git
+Cloning into '1.1-lab-bash'...
+remote: Enumerating objects: 12, done.
+remote: Counting objects: 100% (12/12), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 12 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (12/12), 4.38 KiB | 4.38 MiB/s, done.
+(base) anachaparrohernandez@MacBook-Air-de-Ana desktop % cd 1.1-lab-bash
+(base) anachaparrohernandez@MacBook-Air-de-Ana 1.1-lab-bash % echo >> solutions.
+txt
+
+ - Imprime en consola Hello World.
+
+(base) anachaparrohernandez@MacBook-Air-de-Ana 1.1-lab-bash % echo Hello Word
+Hello Word
+
+
+- Crea un directorio nuevo llamado new_dir.
+
+(base) anachaparrohernandez@MacBook-Air-de-Ana 1.1-lab-bash % mkdir new_dir
+
+- Elimina ese directorio.
+
+(base) anachaparrohernandez@MacBook-Air-de-Ana 1.1-lab-bash % rm -rf new_dir
+
+- Copia el archivo sed.txt dentro de la carpeta lorem a la carpeta lorem-copy. TIP: Puede ser necesario crear la carpeta lorem-copy primero.
+
+(base) anachaparrohernandez@MacBook-Air-de-Ana 1.1-lab-bash % mkdir lorem-copy
+
+(base) anachaparrohernandez@MacBook-Air-de-Ana 1.1-lab-bash % cp lorem/sed.txt l
+orem-copy/sed.txt
+
+- Copia los otros dos archivos de la carpeta lorem a la carpeta lorem-copy en una sola línea.
+
+(base) anachaparrohernandez@MacBook-Air-de-Ana 1.1-lab-bash % cp lorem/at.txt lo
+rem-copy/at.txt & cp lorem/lorem.txt lorem-copy/lorem.txt
+[1] 5097
+[1]  + done       cp lorem/at.txt lorem-copy/at.txt
+(base) anachaparrohernandez@MacBook-Air-de-Ana 1.1-lab-bash % ls lorem-copy
+at.txt		lorem.txt	sed.txt
+
+- Muestra el contenido del archivo sed.txt dentro de la carpeta lorem.
+
+(base) anachaparrohernandez@MacBook-Air-de-Ana lorem % cat sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+
+- Muestra el contenido de los archivos at.txt y lorem.txt dentro de la carpeta lorem.
+
+(base) anachaparrohernandez@MacBook-Air-de-Ana lorem % cat at.txt & cat lorem.tx
+t
+[1] 5199
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+Et harum quidem rerum facilis est et expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet
+ut et voluptates repudiandae sint et molestiae non recusandae.
+Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat[1]  + done       cat at.txt
+
+- Visualiza las primeras 3 líneas del archivo sed.txt dentro de la carpeta lorem-copy
+
+(base) anachaparrohernandez@MacBook-Air-de-Ana lorem-copy % head -3 sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+
+- Visualiza las ultimas 3 líneas del archivo sed.txt dentro de la carpeta lorem-copy
+
+(base) anachaparrohernandez@MacBook-Air-de-Ana lorem-copy % tail -n 3 sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+
+- Añade Homo homini lupus. al final de archivo sed.txt dentro de la carpeta lorem-copy.
+
+(base) anachaparrohernandez@MacBook-Air-de-Ana lorem-copy % echo Homo homini lupus. >> sed.txt
+
+- Visualiza las últimas 3 líneas del archivo sed.txt dentro de la carpeta lorem-copy. Deberías ver ahora Homo homini lupus..
+
+(base) anachaparrohernandez@MacBook-Air-de-Ana lorem-copy % tail -n 3 sed.txt
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+Homo homini lupus.
+
+- Sustituye todas las apariciones de et por ET del archivo at.txt dentro de la carpeta lorem-copy. Deberás usar sed.
+
+(base) anachaparrohernandez@MacBook-Air-de-Ana lorem-copy % sed s/et/ET/ at.txt
+At vero eos ET accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniet
+ut ET voluptates repudiandae sint et molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat%
+
+- Encuentra al usuario activo en el sistema.
+
+(base) anachaparrohernandez@MacBook-Air-de-Ana 1.1-lab-bash % w
+17:10  up 10 days,  4:52, 2 users, load averages: 1,36 1,44 1,37
+USER     TTY      FROM              LOGIN@  IDLE WHAT
+anachaparrohernandez console  -                07oct22 10days -
+anachaparrohernandez s000     -                17:00       - w
+(base) anachaparrohernandez@MacBook-Air-de-Ana 1.1-lab-bash %
+
+
+- Encuentra dónde estás en tu sistema de ficheros.
+
+(base) anachaparrohernandez@MacBook-Air-de-Ana lorem % pwd
+/Users/anachaparrohernandez/desktop/1.1-lab-bash/lorem
+
+- Lista los archivos que terminan por .txt en la carpeta lorem.
+
+(base) anachaparrohernandez@MacBook-Air-de-Ana 1.1-lab-bash % find lorem/ -name
+'*.txt'
+lorem//at.txt
+lorem//lorem.txt
+lorem//sed.txt
+
+- Cuenta el número de líneas que tiene el archivo sed.txt dentro de la carpeta lorem.
+
+(base) anachaparrohernandez@MacBook-Air-de-Ana lorem % wc sed.txt
+      10     129     875 sed.txt
+- Cuenta el número de archivos que empiezan por lorem que están en este directorio y en directorios internos.
+
+(base) anachaparrohernandez@MacBook-Air-de-Ana 1.1-lab-bash % find . -iname "lorem*" -type f |wc -l
+       2
+
+- Encuentra todas las apariciones de et en at.txt dentro de la carpeta lorem.
+
+(base) anachaparrohernandez@MacBook-Air-de-Ana lorem % grep -o -i et at.txt | wc -l
+      11
+
+- Cuenta el número de apariciones del string et en at.txt dentro de la carpeta lorem.
+
+
