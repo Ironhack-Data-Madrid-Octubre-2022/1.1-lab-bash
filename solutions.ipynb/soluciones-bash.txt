@@ -35,6 +35,7 @@ echo "Homo homini lupus" lorem-copy/sed.txt
 gc lorem-copy/sed.txt -tail 3
 
 * Sustituye todas las apariciones de `et` por `ET` del archivo `at.txt` dentro de la carpeta lorem-copy. Deberás usar `sed`. 
+(gc lorem-copy/at.txt) -replace ('et','ET')
 
 * Encuentra al usuario activo en el sistema.
 whoami
@@ -47,7 +48,7 @@ get-childitem lorem/*.txt
 * Cuenta el número de **archivos** que empiezan por `lorem` que están en este directorio y en directorios internos.
  get-childitem -Path lorem*.* -Recurse
 * Encuentra todas las apariciones de `et` en `at.txt` dentro de la carpeta lorem.
-DUDAAAAAAAAAAAAAA(get-content lorem/at.txt | select-string -pattern "et").length
+(get-content lorem/at.txt | select-string -pattern "et").length
 * Cuenta el número de apariciones del string ` et ` en `at.txt` dentro de la carpeta lorem. 
 DUDAAAAAAAAAAAAAA(get-content lorem/at.txt | select-string -pattern "et").length*  Cuenta el número de apariciones del string `et` en todos los archivos del directorio lorem-copy. 
 
@@ -88,13 +89,13 @@ rmdir $name
 * Muestra los procesos de forma jerárquica que se están ejecutando en tu ordenador:
     1. Usando el comando top o htop
     2. Usando el comando ps con argumentos
-
+ps chrome
 * Muestra información sobre tu procesador por pantalla
 systeminfo
 * Crea 3 alias y haz que estén disponibles cada vez que inicias sesión
 
 * Comprime las carpetas lorem y lorem-copy en un archivo llamado lorem-compressed.tar.gz
-
+Compress-archive -Path C:\Users\USER\Desktop\semana1\lunes\1.1-lab-bash\lorem, C:\Users\USER\Desktop\semana1\lunes\1.1-lab-bash\lorem-copy  -DestinationPath lorem-compressed.zip
 * Descomprime el archivo lorem-compressed.tar.gz en la carpeta lorem-uncompressed
-
+Expand-archive -Path lorem-compressed.zip lorem-uncompressed
 * Crea un script bash para imprimir los numeros de 1 a 100.
