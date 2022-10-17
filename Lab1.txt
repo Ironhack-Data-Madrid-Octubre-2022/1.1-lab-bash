@@ -50,9 +50,10 @@ get-content C:\Users\david\Lab\Git_Bash\1.1-lab-bash\lorem\sed.txt | measure-obj
 
 - Cuenta el número de archivos que empiezan por lorem que están en este directorio y en directorios internos.
 (get-childitem -file | measure-object).count
+??
 
 - Encuentra todas las apariciones de et en at.txt dentro de la carpeta lorem.
------------------------
+----------------------
 
 - Cuenta el número de apariciones del string et en at.txt dentro de la carpeta lorem.
 ----------------------
