@@ -485,6 +485,16 @@ dxdiag
 
 * Crea 3 alias y haz que estén disponibles cada vez que inicias sesión
 
+lo incluimos en un fichero vim .bashrc y ponemos lo siguiente
+
+alias gga='git add .'
+alias ggp='git push'
+alias ggc='git commit -am'
+
+luego los cargamos con source .bashrc
+
+
+Fuente: https://www.enmimaquinafunciona.com/pregunta/27096/como-puedo-modificar-mi-perfil-de-git-bash-en-windows
 
 
 * Comprime las carpetas lorem y lorem-copy en un archivo llamado lorem-compressed.tar.gz
